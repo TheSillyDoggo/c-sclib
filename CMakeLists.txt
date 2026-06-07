@@ -20,7 +20,7 @@ add_library(${PROJECT_NAME} STATIC ${SOURCES})
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-target_link_libraries(${PROJECT_NAME} STATIC
+target_link_libraries(${PROJECT_NAME}
     ${LZMA_LIBRARIES}
     ${ZSTD_LIBRARIES}
 )
